@@ -1,7 +1,6 @@
-import { html, LitElement } from 'lit';
+import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
-import '../reset.ts';
-import '../index.scss';
+import { SldsComponent } from '../slds-component.ts';
 
 /**
  * An example element.
@@ -9,7 +8,7 @@ import '../index.scss';
  * @csspart button - The button
  */
 @customElement('njc-button')
-export class NjcButton extends LitElement {
+export class NjcButton extends SldsComponent {
   /**
    * The number of times the button has been clicked.
    */
@@ -23,7 +22,7 @@ export class NjcButton extends LitElement {
 
   override render() {
     return html`
-      <button class="slds-button" @click=${this._onClick}>
+      <button class="slds-button slds-button_brand" @click=${this._onClick}>
         count is ${this.count}
       </button>
     `

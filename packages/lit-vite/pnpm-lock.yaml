@@ -13,6 +13,9 @@ devDependencies:
   '@salesforce-ux/design-system':
     specifier: ^2.23.2
     version: 2.23.2(postcss@8.4.38)
+  postcss:
+    specifier: ^8.4.18
+    version: 8.4.38
   sass:
     specifier: 1.74.1
     version: 1.74.1
