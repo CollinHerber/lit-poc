@@ -13,22 +13,17 @@ export class NjcButton extends SldsComponent {
    * The number of times the button has been clicked.
    */
   @property({ type: Number })
-  count = 0
-
-  constructor() {
-    super()
-    this.count = 0
-  }
+  count = 0;
 
   override render() {
     return html`
-      <button class="slds-button slds-button_brand" @click=${this._onClick}>
+      <button class="slds-button slds-button_brand" @click=${this.onClick}>
         count is ${this.count}
       </button>
     `
   }
 
-  _onClick() {
+  private onClick() {
     this.count++
   }
 }

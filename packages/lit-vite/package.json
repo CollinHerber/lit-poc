@@ -4,16 +4,30 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "dev": "vite",
+    "dependencies:check": "pnpm dlx npm-check-updates",
+    "dependencies:update": "pnpm dlx npm-check-updates -u",
+    "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
+    "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
+    "lint": "eslint --ext .js,.json .",
     "preview": "vite preview"
   },
   "dependencies": {
     "lit": "^3.1.2"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.24.1",
+    "@babel/plugin-proposal-decorators": "^7.24.1",
+    "@babel/preset-env": "^7.24.1",
     "@salesforce-ux/design-system": "^2.23.2",
     "vite": "^5.2.8",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
     "postcss": "^8.4.18",
     "typescript": "^5.4.3",
     "sass": "1.74.1"
