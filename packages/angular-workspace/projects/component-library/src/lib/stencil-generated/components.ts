@@ -4,22 +4,20 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-import type { Components } from 'stencil-library/components';
+import type { Components } from '@ncino/ncino-javascript-components';
 
-import { defineCustomElement as defineMyComponent } from 'stencil-library/components/my-component.js';
 @ProxyCmp({
-  defineCustomElementFn: defineMyComponent,
-  inputs: ['first', 'last', 'middle']
+  inputs: ['buttonClass', 'disabled', 'fullWidth', 'label', 'theme']
 })
 @Component({
-  selector: 'my-component',
+  selector: 'njc-button',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['first', 'last', 'middle'],
-  standalone: true
+  inputs: ['buttonClass', 'disabled', 'fullWidth', 'label', 'theme'],
+  standalone: true,
 })
-export class MyComponent {
+export class NjcButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -27,7 +25,6 @@ export class MyComponent {
   }
 }
 
-
-export declare interface MyComponent extends Components.MyComponent {}
+export declare interface NjcButton extends Components.NjcButton {}
 
 

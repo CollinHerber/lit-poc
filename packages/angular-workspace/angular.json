@@ -12,7 +12,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/component-library/ng-package.json"
+            "project": "projects/component-library/ng-package.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "{*loader.js,bundles/*.js}",
+                "input": "node_modules/@webcomponents/webcomponentsjs",
+                "output": "node_modules/@webcomponents/webcomponentsjs"
+              }
+            ],
+            "scripts": [
+              "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
+            ]
           },
           "configurations": {
             "production": {
