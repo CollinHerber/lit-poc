@@ -1,12 +1,11 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ComponentLibraryModule } from '../../../component-library/src/public-api';
-import '../../../../../lit-components/src/web-components/card-user/card-user';
+import '../../../../../lit-vite/dist/assets/index-fBAMkxSH.js';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ComponentLibraryModule],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
