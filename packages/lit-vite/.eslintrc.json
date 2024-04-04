@@ -5,7 +5,8 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:json/recommended"
+    "plugin:json/recommended",
+    "plugin:storybook/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
@@ -27,8 +28,14 @@
     "prefer-object-has-own": "warn",
     "consistent-return": "warn",
     "guard-for-in": "warn",
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ]
   },
   "overrides": [],
-  "ignorePatterns": ["**/staticresources/**", "**/dist/**"]
+  "ignorePatterns": [
+    "**/staticresources/**",
+    "**/dist/**"
+  ]
 }
