@@ -1,6 +1,6 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import '../../../../../lit-vite/dist/assets/index-fBAMkxSH';
+import '../../../lit-vite/dist/assets/index.js';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,5 @@ import '../../../../../lit-vite/dist/assets/index-fBAMkxSH';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'angular-seventeen';
 }
