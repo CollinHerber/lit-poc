@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import '../../../lit-vite/dist/assets/index-BQk9VHok';
+import '../../../lit-vite/dist/assets/index';
 
 @Component({
   selector: 'app-root',

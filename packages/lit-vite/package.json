@@ -18,6 +18,8 @@
     "lit": "^3.1.2"
   },
   "devDependencies": {
+    "@lit/react": "^1.0.4",
+    "react": "^18.2.0",
     "@babel/eslint-parser": "^7.24.1",
     "@babel/plugin-proposal-decorators": "^7.24.1",
     "@babel/preset-env": "^7.24.4",
@@ -29,6 +31,7 @@
     "@storybook/test": "^8.0.5",
     "@storybook/web-components": "^8.0.5",
     "@storybook/web-components-vite": "^8.0.5",
+    "@types/react": "^18.2.74",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",

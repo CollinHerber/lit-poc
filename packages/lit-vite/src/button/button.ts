@@ -1,7 +1,6 @@
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
 import { SldsComponent } from '../slds-component.ts';
-
 /**
  * An example element.
  *
