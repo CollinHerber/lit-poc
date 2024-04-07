@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite",
+    "dev": "vite build --watch",
     "dependencies:check": "pnpm dlx npm-check-updates",
     "dependencies:update": "pnpm dlx npm-check-updates -u",
     "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.json .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "lit": "^3.1.2"

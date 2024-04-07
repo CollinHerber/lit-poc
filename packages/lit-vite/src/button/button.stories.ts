@@ -1,3 +1,4 @@
+import './button';
 export default {
   title: 'Components/NjcButton',
   component: 'njc-button',

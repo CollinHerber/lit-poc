@@ -1,5 +1,4 @@
 import type { Preview } from "@storybook/web-components";
-import '../dist/assets/index-BQk9VHok.js';
 
 const preview: Preview = {
   parameters: {
