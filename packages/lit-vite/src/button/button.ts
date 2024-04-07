@@ -1,5 +1,5 @@
 import { html } from 'lit';
-import { customElement, property } from 'lit/decorators.js'
+import { customElement, property } from 'lit/decorators.js';
 import { SldsComponent } from '../slds-component.ts';
 /**
  * An example element.
@@ -19,11 +19,11 @@ export class NjcButton extends SldsComponent {
       <button class="slds-button slds-button_brand" @click=${this.onClick}>
         count is ${this.count}
       </button>
-    `
+    `;
   }
 
   private onClick() {
-    this.count++
+    this.count++;
   }
 }
 

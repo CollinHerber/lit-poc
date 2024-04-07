@@ -8,9 +8,9 @@
     "plugin:json/recommended",
     "plugin:storybook/recommended"
   ],
-  "parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2021,
+    "ecmaVersion": 2022,
     "sourceType": "module",
     "allowImportExportEverywhere": true
   },
