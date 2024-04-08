@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@material/web':
+    specifier: ^1.4.0
+    version: 1.4.0
   lit:
     specifier: ^3.1.2
     version: 3.1.2
@@ -1747,6 +1750,13 @@ packages:
     resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.2.0
+
+  /@material/web@1.4.0:
+    resolution: {integrity: sha512-+rnQLUc/vsu7vnkr8XxbEhNVEcdkaYxNjykZ18w/nUMrYTEvAi4TRQJAYeEUXMwRcO3mEXBsCKOtHZ+cbmxTLw==}
+    dependencies:
+      lit: 3.1.2
+      tslib: 2.6.2
+    dev: false
 
   /@mdx-js/react@3.0.1(@types/react@18.2.74)(react@18.2.0):
     resolution: {integrity: sha512-9ZrPIU4MGf6et1m1ov3zKf+q9+deetI51zprKB1D/z3NOb+rUxxtEl3mCjW5wTGh6VhRdwPueh1oRzi6ezkA8A==}
@@ -7117,7 +7127,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tsutils@3.21.0(typescript@5.4.4):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}

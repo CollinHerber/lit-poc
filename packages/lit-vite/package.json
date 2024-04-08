@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite build --watch",
+    "dev": "vite",
     "dependencies:check": "pnpm dlx npm-check-updates",
     "dependencies:update": "pnpm dlx npm-check-updates -u",
     "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
@@ -15,7 +15,8 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
-    "lit": "^3.1.2"
+    "lit": "^3.1.2",
+    "@material/web": "^1.4.0"
   },
   "devDependencies": {
     "@lit/react": "^1.0.4",
