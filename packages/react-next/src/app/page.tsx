@@ -1,8 +1,5 @@
-import dynamic from "next/dynamic"
-
-const NjcButtonComponent = dynamic(import("../../../lit-vite/src/button/button.component"), {
-  ssr: false
-})
+'use client'
+import {NjcButtonComponent} from "../../../lit-vite/src/button/button.component";
 
 export default function Home() {
   return (
