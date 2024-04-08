@@ -1,11 +1,14 @@
-import "../../../lit-vite/dist/assets/index";
+import dynamic from "next/dynamic"
+
+const NjcButtonComponent = dynamic(import("../../../lit-vite/src/button/button.component"), {
+  ssr: false
+})
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 dark:bg-slate-800">
       <div>A button!</div>
-      {/* @ts-ignore */}
-      <njc-button></njc-button>
+      <NjcButtonComponent></NjcButtonComponent>
     </main>
   );
 }
