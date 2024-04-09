@@ -1,8 +1,9 @@
-import './button.slds';
+import './button-slds-mixin';
+
 export default {
-  title: 'Components/NjcButton',
-  component: 'njc-button',
-  tags: ['autodocs'],
+    title: 'Components/NjcButton',
+    component: 'njc-button',
+    tags: ['autodocs'],
 };
 
 const Template = args => `
