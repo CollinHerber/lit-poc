@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.json .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build -o ../../docs"
   },
   "dependencies": {
     "@material/web": "^1.4.0",
@@ -28,8 +28,8 @@
     "@storybook/test": "^8.0.6",
     "@storybook/web-components": "^8.0.6",
     "@storybook/web-components-vite": "^8.0.6",
-    "@types/react": "^18.2.74",
-    "@typescript-eslint/parser": "^7.5.0",
+    "@types/react": "^18.2.75",
+    "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
