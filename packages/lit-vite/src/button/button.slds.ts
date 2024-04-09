@@ -3,7 +3,7 @@ import { html, unsafeCSS } from 'lit';
 import styles from '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css?inline';
 import { customElement } from 'lit/decorators.js';
 
-@customElement('njc-button')
+@customElement('nsc-button')
 export class NjcButtonSlds extends NjcButton {
   static styles = [unsafeCSS(styles)];
 

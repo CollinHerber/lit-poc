@@ -1,12 +1,11 @@
 import './button.material';
 export default {
-  title: 'Components/NjcButton',
-  component: 'njc-button',
-  tags: ['autodocs'],
+  title: 'Components/Button',
+  component: 'nmc-button'
 };
 
 const Template = args => `
-<njc-button></njc-button>
+<nmc-button></nmc-button>
 `;
 
 export const MaterialExample = Template.bind({});

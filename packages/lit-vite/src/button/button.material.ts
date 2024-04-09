@@ -11,7 +11,7 @@ import { customElement } from 'lit/decorators.js';
 
 export type NJC_BUTTON_MATERIAL_VARIANT = 'filled' | 'outlined' | 'text' | 'elevated' | 'filled-tonal';
 
-@customElement('njc-button')
+@customElement('nmc-button')
 export class NjcButtonMaterial extends NjcButton {
   @property()
   variant: NJC_BUTTON_MATERIAL_VARIANT = 'filled';

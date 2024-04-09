@@ -2,6 +2,6 @@ import{N as m,t as u}from"./button-liGGkKtV.js";import{r as g,x as f}from"./lit-
       <button class="slds-button slds-button_brand" @click=${this.onClick}>
         count is ${this.count}
       </button>
-    `}};i.styles=[g(_)];i=x([u("njc-button")],i);const y={title:"Components/NjcButton",component:"njc-button",tags:["autodocs"]},k=r=>`
-<njc-button></njc-button>
-`,o=k.bind({});o.args={};var n,c,b;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:"args => `\n<njc-button></njc-button>\n`",...(b=(c=o.parameters)==null?void 0:c.docs)==null?void 0:b.source}}};const z=["SldsExample"];export{o as SldsExample,z as __namedExportsOrder,y as default};
+    `}};i.styles=[g(_)];i=x([u("nsc-button")],i);const y={title:"Components/NjcButton",component:"njc-button",tags:["autodocs"]},k=r=>`
+<nsc-button></nsc-button>
+`,o=k.bind({});o.args={};var n,c,b;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:"args => `\n<nsc-button></nsc-button>\n`",...(b=(c=o.parameters)==null?void 0:c.docs)==null?void 0:b.source}}};const z=["SldsExample"];export{o as SldsExample,z as __namedExportsOrder,y as default};
