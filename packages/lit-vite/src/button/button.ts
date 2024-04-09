@@ -1,15 +1,16 @@
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { SldsComponent } from '../slds-component.ts';
+
 /**
- * An example element.
- *
- * @csspart button - The button
+ * A button that counts the number of times it has been clicked.
+ * @element njc-button
  */
 @customElement('njc-button')
 export class NjcButton extends SldsComponent {
   /**
    * The number of times the button has been clicked.
+   * @type {number}
    */
   @property({ type: Number })
   count = 0;
