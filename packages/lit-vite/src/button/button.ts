@@ -10,12 +10,17 @@ import { customElement, property } from 'lit/decorators.js';
 export class NjcButton extends LitElement {
     /**
      * The number of times the button has been clicked.
+     * @type {number}
      */
     @property({ type: Number })
     public count = 0;
 
     public onClick() {
         this.count++;
+    }
+
+    override render() {
+        return super.render();
     }
 }
 
