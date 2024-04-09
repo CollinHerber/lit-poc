@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Storybook
         working-directory: ./packages/lit-vite
-        run: pnpm run build:storybook
+        run: pnpm run storybook:build
 
       - name: Commit Changes
         run: |
