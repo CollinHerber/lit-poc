@@ -32,12 +32,10 @@ jobs:
         run: pnpm i
 
       - name: Build Storybook
-        if: ${{ env.GIT_BRANCH == 'release' }}
         working-directory: ./packages/lit-vite
         run: pnpm run build:storybook
 
       - name: Commit Changes
-        if: ${{ env.GIT_BRANCH == 'release' }}
         run: |
           git add .
           git commit -m "chore(ci): update storybook [skip ci]"
