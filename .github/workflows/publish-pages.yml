@@ -1,0 +1,44 @@
+name: Publish Github Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish pages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@3
+
+      - name: Setup Node with pnpm Cache
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Run pnpm Install
+        working-directory: ./packages/lit-vite
+        run: pnpm i
+
+      - name: Build Storybook
+        if: ${{ env.GIT_BRANCH == 'release' }}
+        working-directory: ./packages/lit-vite
+        run: pnpm run build:storybook
+
+      - name: Commit Changes
+        if: ${{ env.GIT_BRANCH == 'release' }}
+        run: |
+          git add .
+          git commit -m "chore(ci): update storybook [skip ci]"
+          git push
