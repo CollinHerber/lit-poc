@@ -48,4 +48,4 @@ jobs:
         run: |
           git add .
           git commit -m "chore(ci): update storybook [skip ci]"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/CollinHerber/lit-poc.git HEAD:main
+          git push https://${{ secrets.MY_PAT }}@github.com/CollinHerber/lit-poc.git HEAD:main
