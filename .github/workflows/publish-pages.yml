@@ -16,6 +16,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          persist-credentials: true
           fetch-depth: 0
 
       - name: Setup pnpm
@@ -44,4 +45,4 @@ jobs:
         run: |
           git add .
           git commit -m "chore(ci): update storybook [skip ci]"
-          git push
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/CollinHerber/lit-poc.git HEAD:main
