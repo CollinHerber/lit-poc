@@ -8,5 +8,6 @@ export default {
 const Template = args => `
 <njc-button></njc-button>
 `;
+
 export const MaterialExample = Template.bind({});
 MaterialExample.args = {};
