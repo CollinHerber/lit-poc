@@ -1,0 +1,99 @@
+.slds-dropdown_inverse .slds-dropdown__item ::slotted(a),
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a) {
+    color: var(--slds-g-color-neutral-base-100, white);
+}
+
+.slds-dropdown_inverse .slds-dropdown__item ::slotted(a):hover, .slds-dropdown_inverse .slds-dropdown__item ::slotted(a):focus,
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a):hover,
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a):focus {
+    color: var(--slds-g-color-neutral-100-opacity-75, rgba(255, 255, 255, 0.75));
+    background-color: transparent;
+}
+
+.slds-dropdown_inverse .slds-dropdown__item ::slotted(a):active,
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a):active {
+    color: var(--slds-g-color-neutral-100-opacity-50, rgba(255, 255, 255, 0.5));
+    background-color: transparent;
+}
+
+.slds-dropdown_inverse .slds-dropdown__item ::slotted(a)[aria-disabled=true],
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a)[aria-disabled=true] {
+    color: var(--slds-g-color-neutral-100-opacity-25, rgba(255, 255, 255, 0.15));
+    cursor: default;
+}
+
+.slds-dropdown_inverse .slds-dropdown__item ::slotted(a)[aria-disabled=true]:hover,
+.slds-dropdown--inverse .slds-dropdown__item ::slotted(a)[aria-disabled=true]:hover {
+    background-color: transparent;
+}
+
+.slds-dropdown__item ::slotted(a) {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    color: var(--slds-g-color-neutral-base-10, #181818);
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.slds-dropdown__item ::slotted(a:hover),
+.slds-dropdown__item ::slotted(a:focus) {
+    outline: 0;
+    text-decoration: none;
+    background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+}
+
+.slds-dropdown__item ::slotted(a:active) {
+    text-decoration: none;
+    background-color: var(--slds-g-color-neutral-base-95, #f3f3f3);
+}
+
+.slds-dropdown__item ::slotted(a[aria-disabled=true]) {
+    color: var(--slds-g-color-neutral-base-80, #c9c9c9);
+    cursor: default;
+}
+
+.slds-dropdown__item ::slotted(a[aria-disabled=true]:hover) {
+    background-color: transparent;
+}
+
+.slds-dropdown__item ::slotted(a[aria-disabled=true]) .slds-icon {
+    fill: var(--slds-g-color-neutral-base-80, #c9c9c9);
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-error {
+    background: var(--slds-g-color-error-base-40, #ba0517);
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-success {
+    background: var(--slds-g-color-success-base-50, #2e844a);
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-error, .slds-dropdown__item > ::slotted(a).slds-has-success {
+    color: var(--slds-g-color-neutral-base-100, white);
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-warning {
+    background: var(--slds-g-color-warning-base-60, #fe9339);
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-warning .slds-indicator_unread {
+    background-color: currentColor;
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-warning .slds-indicator_unsaved {
+    color: currentColor;
+}
+
+.slds-dropdown__item ::slotted(a).slds-has-error:hover, .slds-dropdown__item ::slotted(a).slds-has-error:focus, .slds-dropdown__item ::slotted(a).slds-has-success:hover, .slds-dropdown__item ::slotted(a).slds-has-success:focus, .slds-dropdown__item ::slotted(a).slds-has-warning:hover, .slds-dropdown__item ::slotted(a).slds-has-warning:focus {
+    text-decoration: underline;
+}

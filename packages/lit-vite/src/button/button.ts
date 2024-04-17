@@ -1,24 +1,22 @@
 import { LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-/**
- * An example element.
- *
- * @csspart button - The button
+
+export type NJC_BUTTON_VARIANTS = null | 'neutral' | 'outline-brand' | 'brand' | 'destructive' | 'text-destructive' | 'success';
+export type NJC_BUTTON_MATERIAL_VARIANT = 'filled' | 'outlined' | 'text' | 'elevated' | 'filled-tonal';
+
+/*
+    @slot - Default slot for the button text
  */
 export class NjcButton extends LitElement {
-  /**
-   * The number of times the button has been clicked.
-   */
-  @property({ type: Number })
-  public count = 0;
+    /*
+        @property - variant - The variant of the button
+        @type - NJC_BUTTON_VARIANTS | NJC_BUTTON_MATERIAL_VARIANT
+     */
+    @property()
+    variant: NJC_BUTTON_MATERIAL_VARIANT | NJC_BUTTON_VARIANTS  = 'filled';
 
-  public onClick() {
-    this.count++;
-  }
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'njc-button': NjcButton
-  }
+    public onClick(e: Event) {
+        this.dispatchEvent(new CustomEvent('click'));
+        e.stopPropagation();
+    }
 }

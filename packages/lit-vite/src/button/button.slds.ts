@@ -1,17 +1,43 @@
 import { NjcButton } from './button.ts';
 import { html, unsafeCSS } from 'lit';
-import styles from '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css?inline';
+import styles from '../index.scss?inline';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('nsc-button')
 export class NjcButtonSlds extends NjcButton {
-  static styles = [unsafeCSS(styles)];
+    static styles = [unsafeCSS(styles)];
 
-  override render() {
-    return html`
-      <button class="slds-button slds-button_brand" @click=${this.onClick}>
-        count is ${this.count}
-      </button>
-    `;
-  }
+    private get _themeClass() {
+        switch (this.variant) {
+            case 'neutral':
+                return 'slds-button_neutral';
+            case 'brand':
+                return 'slds-button_brand';
+            case 'outline-brand':
+                return 'slds-button_outline-brand';
+            case 'destructive':
+                return 'slds-button_destructive';
+            case 'text-destructive':
+                return 'slds-button_text-destructive';
+            case 'success':
+                return 'slds-button_success';
+            default:
+                return '';
+        }
+    }
+
+    override render() {
+        return html`
+            <button class="slds-button ${this._themeClass}" @click=${this.onClick}>
+                <slot>! Missing Text !</slot>
+            </button>
+        `;
+    }
+}
+
+declare global {
+    // eslint-disable-next-line no-unused-vars
+    interface HTMLElementTagNameMap {
+        'nsc-button': NjcButtonSlds;
+    }
 }
