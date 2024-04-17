@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "packageManager": "pnpm@8.15.6",
   "scripts": {
-    "build": "tsc && vite build --c config/vite.config.js",
-    "dev:material": "vite  --c config/vite.dev.material.config.js",
-    "dev:slds": "vite --c config/vite.dev.slds.config.js",
+    "build": "tsc && vite build",
+    "dev": "vite",
     "dependencies:check": "pnpm dlx npm-check-updates",
     "dependencies:update": "pnpm dlx npm-check-updates -u",
     "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",

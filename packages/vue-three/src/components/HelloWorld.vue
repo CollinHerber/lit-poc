@@ -15,7 +15,7 @@ import '../../../lit-vite/dist/assets/index.js';
       <div>
         Hey look a NJC Button!
       </div>
-      <njc-button></njc-button>
+      <nsc-button></nsc-button>
     </h3>
   </div>
 </template>

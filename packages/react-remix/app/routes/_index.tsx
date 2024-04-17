@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import {NjcButtonComponent} from '../../../lit-vite/src/button/button.component';
+import {NjcButtonSldsComponent} from '../../../lit-vite/src/button/button.component';
 
 export const meta: MetaFunction = () => {
   return [
@@ -38,11 +38,11 @@ export default function Index() {
         </li>
         <li>
           <div>A NJC Button using Native Web Component!</div>
-          <njc-button></njc-button>
+          <nsc-button></nsc-button>
         </li>
         <li>
           <div>A NJC Button using Lit React Wrapper!</div>
-          <NjcButtonComponent></NjcButtonComponent>
+          <NjcButtonSldsComponent></NjcButtonSldsComponent>
         </li>
       </ul>
     </div>
