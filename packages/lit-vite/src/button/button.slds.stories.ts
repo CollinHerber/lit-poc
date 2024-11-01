@@ -1,9 +1,9 @@
 import './button.slds';
-import { NjcButtonSlds } from './button.slds';
+import { NscButton } from './button.slds';
 import { Meta, StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-const meta: Meta<NjcButtonSlds> = {
+const meta: Meta<NscButton> = {
     title: 'Components/Button/Slds',
     component: 'nsc-button',
     tags: ['autodocs'],
@@ -16,7 +16,7 @@ const template = args => html`
 </nsc-button>
 `;
 
-type Story = StoryObj<NjcButtonSlds & { defaultSlot: string }>;
+type Story = StoryObj<NscButton & { defaultSlot: string }>;
 export const SldsExample: Story = {
     render: (args) => template(args),
     args: {

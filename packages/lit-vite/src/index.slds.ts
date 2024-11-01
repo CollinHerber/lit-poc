@@ -1,5 +1,5 @@
-import {NscButtonSlds} from './button/button.slds';
+import {NscButton} from './button/button.slds';
 
 export {
-    NscButtonSlds
+    NscButton
 }
