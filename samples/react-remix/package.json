@@ -29,6 +29,7 @@
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
         "@collin/lit-components": "file:../../packages/lit-vite",
+        "@collin/react-wrappers": "file:../../packages/react-wrappers",
         "eslint": "^8.57.1",
         "eslint-import-resolver-typescript": "^3.6.3",
         "eslint-plugin-import": "^2.31.0",

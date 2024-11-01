@@ -2,7 +2,7 @@ import type {MetaFunction} from "@remix-run/node";
 
 'use client'
 import {NJC_COMBOBOX_OPTION} from "@collin/lit-components";
-import { NgcBreadcrumbs } from "@collin/lit-components/gator-react";
+import { NgcBreadcrumbs } from "@collin/react-wrappers";
 import {useEffect, useRef} from "react";
 
 export const meta: MetaFunction = () => {
