@@ -1,0 +1,43 @@
+{
+    "name": "angular-seventeen",
+    "version": "0.0.0",
+    "scripts": {
+        "dependencies:check": "pnpm dlx npm-check-updates",
+        "dependencies:update": "pnpm dlx npm-check-updates -u",
+        "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
+        "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^17.3.12",
+        "@angular/common": "^17.3.12",
+        "@angular/compiler": "^17.3.12",
+        "@angular/core": "^17.3.12",
+        "@angular/forms": "^17.3.12",
+        "@angular/platform-browser": "^17.3.12",
+        "@angular/platform-browser-dynamic": "^17.3.12",
+        "@angular/router": "^17.3.12",
+        "@collin/lit-components": "file:../../packages/lit-vite",
+        "rxjs": "~7.8.1",
+        "tslib": "^2.8.0",
+        "zone.js": "~0.15.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^17.3.10",
+        "@angular/cli": "^17.3.10",
+        "@angular/compiler-cli": "^17.3.12",
+        "@types/jasmine": "~5.1.4",
+        "jasmine-core": "~5.4.0",
+        "karma": "~6.4.4",
+        "karma-chrome-launcher": "~3.2.0",
+        "karma-coverage": "~2.2.1",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.1.0",
+        "typescript": "5.4.5"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "react",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "dependencies:check": "pnpm dlx npm-check-updates",
+        "dependencies:update": "pnpm dlx npm-check-updates -u",
+        "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
+        "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
+        "dev": "next dev",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@collin/lit-components": "file:../../packages/lit-vite",
+        "react": "^18",
+        "react-dom": "^18",
+        "next": "14.2.15"
+    },
+    "devDependencies": {
+        "typescript": "^5",
+        "@types/node": "^22",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.14"
+    }
+}

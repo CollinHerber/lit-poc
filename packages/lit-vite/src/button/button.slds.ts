@@ -4,7 +4,7 @@ import styles from '../index.scss?inline';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('nsc-button')
-export class NjcButtonSlds extends NjcButton {
+export class NscButtonSlds extends NjcButton {
     static styles = [unsafeCSS(styles)];
 
     private get _themeClass() {
@@ -38,6 +38,6 @@ export class NjcButtonSlds extends NjcButton {
 declare global {
     // eslint-disable-next-line no-unused-vars
     interface HTMLElementTagNameMap {
-        'nsc-button': NjcButtonSlds;
+        'nsc-button': NscButtonSlds;
     }
 }

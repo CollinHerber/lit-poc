@@ -1,0 +1,41 @@
+{
+    "name": "vue-three",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "dependencies:check": "pnpm dlx npm-check-updates",
+        "dependencies:update": "pnpm dlx npm-check-updates -u",
+        "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
+        "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
+        "build": "run-p type-check \"build-only {@}\" --",
+        "preview": "vite preview",
+        "build-only": "vite build",
+        "type-check": "vue-tsc --build --force",
+        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+        "format": "prettier --write src/"
+    },
+    "dependencies": {
+        "@collin/lit-components": "file:../../packages/lit-vite",
+        "vue": "^3.5.12",
+        "vue-router": "^4.4.5"
+    },
+    "devDependencies": {
+        "@rushstack/eslint-patch": "^1.10.4",
+        "@tsconfig/node20": "^20.1.4",
+        "@types/node": "^20.16.14",
+        "@vitejs/plugin-vue": "^5.1.4",
+        "@vitejs/plugin-vue-jsx": "^3.1.0",
+        "@vue/eslint-config-prettier": "^8.0.0",
+        "@vue/eslint-config-typescript": "^12.0.0",
+        "@vue/tsconfig": "^0.5.1",
+        "eslint": "^8.57.1",
+        "eslint-plugin-vue": "^9.29.1",
+        "npm-run-all2": "^6.2.6",
+        "prettier": "^3.3.3",
+        "typescript": "~5.6.3",
+        "vite": "^5.4.9",
+        "vue-tsc": "^2.1.6"
+    }
+}

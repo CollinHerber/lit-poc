@@ -1,48 +1,70 @@
 {
-  "name": "vite-lit",
-  "private": true,
-  "version": "0.0.0",
-  "packageManager": "pnpm@8.15.6",
-  "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite",
-    "dependencies:check": "pnpm dlx npm-check-updates",
-    "dependencies:update": "pnpm dlx npm-check-updates -u",
-    "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
-    "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
-    "lint": "eslint --ext .js,.json .",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build -o ../../docs"
-  },
-  "dependencies": {
-    "@material/web": "^1.4.0",
-    "lit": "^3.1.2"
-  },
-  "devDependencies": {
-    "@lit/react": "^1.0.4",
-    "@salesforce-ux/design-system": "^2.23.2",
-    "@storybook/addon-essentials": "^8.0.6",
-    "@storybook/addon-links": "^8.0.6",
-    "@storybook/blocks": "^8.0.6",
-    "@storybook/test": "^8.0.6",
-    "@storybook/web-components": "^8.0.6",
-    "@storybook/web-components-vite": "^8.0.6",
-    "@types/react": "^18.2.75",
-    "@typescript-eslint/parser": "^7.6.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-storybook": "^0.8.0",
-    "postcss": "^8.4.38",
-    "react": "^18.2.0",
-    "sass": "1.74.1",
-    "storybook": "^8.0.6",
-    "storybook-dark-mode": "^4.0.1",
-    "typescript": "^5.4.4",
-    "vite": "^5.2.8"
-  }
+    "name": "@collin/lit-components",
+    "private": true,
+    "version": "0.0.0",
+    "packageManager": "pnpm@9.12.3",
+    "scripts": {
+        "build": "tsc && vite build",
+        "dev": "vite",
+        "dependencies:check": "pnpm dlx npm-check-updates",
+        "dependencies:update": "pnpm dlx npm-check-updates -u",
+        "dependencies:update:patch": "pnpm dlx npm-check-updates -u --target patch",
+        "dependencies:update:minor": "pnpm dlx npm-check-updates -u --target minor",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "storybook": "storybook dev -p 6006",
+        "storybook:build": "storybook build -o ../../docs"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/types/index.d.ts"
+        },
+        "./material": {
+            "import": "./dist/index.material.js",
+            "types": "./dist/types/index.material.d.ts"
+        },
+        "./types": {
+            "types": "./dist/types/index.d.ts"
+        },
+        "./slds": {
+            "import": "./dist/index.slds.js",
+            "types": "./dist/types/index.slds.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@material/web": "^2.2.0",
+        "lit": "^3.2.1"
+    },
+    "devDependencies": {
+        "@lit/react": "^1.0.6",
+        "@salesforce-ux/design-system": "^2.25.3",
+        "@storybook/addon-essentials": "^8.4.1",
+        "@storybook/addon-links": "^8.4.1",
+        "@storybook/blocks": "^8.4.1",
+        "@storybook/test": "^8.4.1",
+        "@storybook/web-components": "^8.4.1",
+        "@storybook/web-components-vite": "^8.4.1",
+        "@types/react": "^18.3.12",
+        "@typescript-eslint/parser": "^8.12.2",
+        "eslint": "^9.13.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-json": "^4.0.1",
+        "eslint-plugin-n": "^17.12.0",
+        "eslint-plugin-promise": "^7.1.0",
+        "eslint-plugin-storybook": "^0.10.1",
+        "glob": "^11.0.0",
+        "postcss": "^8.4.47",
+        "react": "^18.3.1",
+        "sass": "1.80.5",
+        "storybook": "^8.4.1",
+        "storybook-dark-mode": "^4.0.2",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10",
+        "vite-plugin-dts": "4.3.0"
+    }
 }
